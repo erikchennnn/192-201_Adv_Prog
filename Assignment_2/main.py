@@ -1,5 +1,3 @@
-"""Demonstrate the CampusWheels rental classes."""
-
 from rental import ElectricCar, Motorbike, Renter, Vehicle
 
 

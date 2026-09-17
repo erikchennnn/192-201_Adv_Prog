@@ -1,8 +1,4 @@
-"""Object-oriented models for the CampusWheels rental desk."""
-
-
 class Vehicle:
-    """A vehicle that can be rented and returned."""
 
     def __init__(self, make, model, plate):
         self.make = make
@@ -11,11 +7,9 @@ class Vehicle:
         self.is_rented = False
 
     def rent(self):
-        """Mark the vehicle as rented."""
         self.is_rented = True
 
     def return_vehicle(self):
-        """Mark the vehicle as available."""
         self.is_rented = False
 
     def __str__(self):
@@ -24,7 +18,6 @@ class Vehicle:
 
 
 class Renter:
-    """A renter with validated personal details."""
 
     def __init__(self, name, license_no):
         self.name = name
@@ -53,7 +46,6 @@ class Renter:
 
 
 class ElectricCar(Vehicle):
-    """A vehicle powered by a battery."""
 
     def __init__(self, make, model, plate, battery_kwh):
         super().__init__(make, model, plate)
@@ -68,7 +60,6 @@ class ElectricCar(Vehicle):
 
 
 class Motorbike(Vehicle):
-    """A vehicle described by its engine capacity."""
 
     def __init__(self, make, model, plate, engine_cc):
         super().__init__(make, model, plate)
